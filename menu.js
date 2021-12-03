@@ -3,12 +3,12 @@ const { sequelize, DataTypes, Model } = require('./db');
 class Menu extends Model {};
 
 Menu.init({
-    name: DataTypes.STRING,
-    type: DataTypes.STRING
+    type: DataTypes.STRING,
+    //: DataTypes.STRING
 }, {
     sequelize,
     timestamps: false
 });
 
-module.exports = { Restaurant }; 
+module.exports = { Menu }; 
 
